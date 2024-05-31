@@ -14,3 +14,15 @@
 
 - `ddev composer install`
 - `ddev craft up`
+
+## committing changes
+
+- `git status`
+- `git add .`
+- `git commit`
+- `git pull`
+- resolve any conflicts
+- `ddev composer install`
+- `ddev craft up`
+- `git status` to make sure everything is still committed
+- `git push`
