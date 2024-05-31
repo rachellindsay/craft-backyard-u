@@ -14,7 +14,7 @@ settings:
   showCardsInGrid: false
   showSiteMenu: false
   sources:
-    - 'section:3156aee6-ecaa-4780-a974-6bc6956fe541' # instructors
+    - 'section:3156aee6-ecaa-4780-a974-6bc6956fe541'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

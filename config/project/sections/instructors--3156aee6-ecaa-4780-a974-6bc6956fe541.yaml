@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - a6877f4d-9055-4da1-a5b1-c4170ac02cd4 # instructor
+  - a6877f4d-9055-4da1-a5b1-c4170ac02cd4
 handle: instructors
 maxAuthors: 1
 name: instructors

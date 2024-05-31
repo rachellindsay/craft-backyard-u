@@ -81,7 +81,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 734d4095-bd96-4d2a-ad75-084d7befc967 # Instructor
+            fieldUid: 734d4095-bd96-4d2a-ad75-084d7befc967
             handle: null
             includeInCards: false
             instructions: null

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bc241763f2191577894575ac6bc9477",
+    "content-hash": "3808288e15c2002ff3ac9fa5261b34ba",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -285,11 +285,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.1.3",
+            "version": "5.1.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/495d5bd84e77d064e304f495493a0832943c1faa",
-                "reference": "495d5bd84e77d064e304f495493a0832943c1faa",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/9d48deb548e0e7ec3aff78c7a9b4cc3bfe1c9092",
+                "reference": "9d48deb548e0e7ec3aff78c7a9b4cc3bfe1c9092",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-05-14T18:49:55+00:00"
+            "time": "2024-05-25T18:49:03+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1197,7 +1197,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v10.48.10",
+            "version": "v10.48.12",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/collections/zipball/f9589f1063a449111dcaa1d68285b507d9483a95",
@@ -1242,7 +1242,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v10.48.10",
+            "version": "v10.48.12",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/conditionable/zipball/d0958e4741fc9d6f516a552060fd1b829a85e009",
@@ -1278,7 +1278,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v10.48.10",
+            "version": "v10.48.12",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/contracts/zipball/8d7152c4a1f5d9cf7da3e8b71f23e4556f6138ac",
@@ -1316,7 +1316,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v10.48.10",
+            "version": "v10.48.12",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/macroable/zipball/dff667a46ac37b634dcf68909d9d41e94dc97c27",
@@ -1717,11 +1717,11 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.4.0",
+            "version": "5.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/298d2febfe79d03fe714eb871d5538da55205b1a",
-                "reference": "298d2febfe79d03fe714eb871d5538da55205b1a",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/9d07b3f7fdcf5efec5d1609cba3c19c5ea2bdc9c",
+                "reference": "9d07b3f7fdcf5efec5d1609cba3c19c5ea2bdc9c",
                 "shasum": ""
             },
             "require": {
@@ -1758,7 +1758,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2024-04-09T21:13:58+00:00"
+            "time": "2024-05-21T05:55:05+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
