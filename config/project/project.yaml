@@ -27,16 +27,16 @@ meta:
     83ff54c4-14e8-4364-ab22-626c8615f0ac: backyard-university # backyard-university
     95de9ce8-1ed9-4d90-8330-a98cdc27fc0e: backyard-university # backyard-university
     277cebc1-e5f9-4f08-a729-1ed4feaa3cfb: 'Text Link' # Text Link
-    734d4095-bd96-4d2a-ad75-084d7befc967: Instructor
+    734d4095-bd96-4d2a-ad75-084d7befc967: Instructor # Instructor
     2104f81d-4950-44be-82ff-b728d5922ac3: Classes # Classes
     2511dad3-82f3-4053-9df2-675b5dc6336d: homepage # homepage
-    3156aee6-ecaa-4780-a974-6bc6956fe541: instructors
+    3156aee6-ecaa-4780-a974-6bc6956fe541: instructors # instructors
     6365fd4a-8b7d-4e60-a260-0e998504e818: image # image
     6879c3a2-493c-4b4f-941b-13799c080848: plaintext-multiline # plaintext-multiline
     99708b36-7733-4560-a15f-ac6db90ee838: classes # classes
     853056af-c326-4731-a0cd-fe065d13d97f: ckeditor # ckeditor
     a50c4bce-6e97-4d46-8fb9-c6f75a333e78: Details # Details
-    a6877f4d-9055-4da1-a5b1-c4170ac02cd4: instructor
+    a6877f4d-9055-4da1-a5b1-c4170ac02cd4: instructor # instructor
     b2b958cd-3387-41a9-9f93-74fffdb318e6: CTA # CTA
     cb8918ee-8e0f-44e0-9067-15f06fca63ff: 'content builder ck' # content builder ck
     d897fca1-8cdf-48df-9ab9-37e07bf9b10c: images # images
