@@ -1,0 +1,95 @@
+color: red
+fieldLayouts:
+  772fee5c-7da7-4891-bd01-37da2fc1a97a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d55f2e0a-cdb1-4df4-bf81-5855bce14783
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a1ceb67-8702-4d71-ab27-c1ce54eeedb5 # single line plaintext
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfc6e8af-4d86-4daf-9617-933bb8688dcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6879c3a2-493c-4b4f-941b-13799c080848 # plaintext-multiline
+            handle: tagline
+            includeInCards: false
+            instructions: null
+            label: tagline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31a1c65a-282d-4520-949b-32375e0689d3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6365fd4a-8b7d-4e60-a260-0e998504e818 # image
+            handle: buLogo
+            includeInCards: false
+            instructions: 'BU logo image'
+            label: bu-logo
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2ee794f-3d0f-420b-a1a2-8977071351e9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f895feaa-9cd9-4901-8077-9e8c01810508
+        userCondition: null
+handle: homepage
+hasTitleField: false
+icon: house
+name: homepage
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{homepage}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

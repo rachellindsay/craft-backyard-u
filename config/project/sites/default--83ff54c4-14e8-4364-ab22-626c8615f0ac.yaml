@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: backyard-university
+primary: true
+siteGroup: 95de9ce8-1ed9-4d90-8330-a98cdc27fc0e # backyard-university
+sortOrder: 1
