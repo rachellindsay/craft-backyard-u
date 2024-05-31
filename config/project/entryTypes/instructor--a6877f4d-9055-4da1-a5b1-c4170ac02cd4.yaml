@@ -1,6 +1,6 @@
-color: green
+color: pink
 fieldLayouts:
-  a1ef2840-9118-4b4a-b862-d9a363890d41:
+  7bba22f1-4661-4324-8938-f7b6e797489c:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Class Title'
+            label: name
             max: null
             min: null
             name: null
@@ -30,77 +30,47 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 48c21944-87b1-427e-ae21-ebcadd4decef
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6879c3a2-493c-4b4f-941b-13799c080848 # plaintext-multiline
-            handle: shortDescription
-            includeInCards: false
-            instructions: null
-            label: 'short class description'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5eff5625-747f-41c4-bcd4-70b45bfe1c8e
+            uid: 7b4c27b5-7103-4a74-aa3b-c5af9e78fd7b
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
             fieldUid: 6365fd4a-8b7d-4e60-a260-0e998504e818 # image
-            handle: images
+            handle: instructorImage
             includeInCards: false
             instructions: null
-            label: images
+            label: 'instructor image'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8defc2d3-57f0-4d29-a9d6-b224c97ddab4
+            uid: b05923c5-1cc8-4c65-88b4-e741111aabf5
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
             fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # content builder ck
-            handle: classDescription
+            handle: bio
             includeInCards: false
             instructions: null
-            label: 'Class Description'
+            label: bio
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ff30f52a-e302-4576-b2e2-bfaba18fe9de
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 734d4095-bd96-4d2a-ad75-084d7befc967 # Instructor
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4853629d-9e05-4023-af89-ed6552a95aca
+            uid: 41c83ed7-d329-4db7-b741-e74942f1ef97
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: a533e4ec-7cbe-4a9b-8723-acd90ff3aa26
+        uid: 6af3e72a-28f8-436e-a87f-388d973722d3
         userCondition: null
-handle: classes
+handle: instructor
 hasTitleField: true
-icon: tomato
-name: Classes
+icon: user
+name: instructor
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

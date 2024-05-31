@@ -4,17 +4,53 @@ instructions: null
 name: 'Text Link'
 searchable: false
 settings:
-  createButtonLabel: null
-  entryTypes:
-    - fc1192e1-8612-4a29-9177-ca5dd3c25733 # TextLink
-  includeTableView: false
-  maxEntries: null
-  minEntries: null
-  pageSize: 50
-  propagationKeyFormat: null
-  propagationMethod: all
-  showCardsInGrid: false
-  viewMode: cards
+  addRowLabel: 'Add a row'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'text link'
+            -
+              - handle
+              - textLink
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - url
+            -
+              - handle
+              - url
+            -
+              - width
+              - ''
+            -
+              - type
+              - url
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: null
+  minRows: null
+  staticRows: false
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\fields\Table

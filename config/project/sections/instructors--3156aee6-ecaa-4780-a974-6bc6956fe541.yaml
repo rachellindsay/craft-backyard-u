@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - a6877f4d-9055-4da1-a5b1-c4170ac02cd4 # instructor
+handle: instructors
+maxAuthors: 1
+name: instructors
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  83ff54c4-14e8-4364-ab22-626c8615f0ac: # backyard-university
+    enabledByDefault: true
+    hasUrls: true
+    template: instructors/_entry
+    uriFormat: 'instructors/{slug}'
+type: channel
