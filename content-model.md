@@ -24,6 +24,7 @@
   - Image
 
     - Assets ( 1 or more)
+    - How to handle if no images?
 
   - Title
 

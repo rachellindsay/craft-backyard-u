@@ -1,4 +1,4 @@
-dateModified: 1717119633
+dateModified: 1717397307
 email:
   fromEmail: racheljlindsay@gmail.com
   fromName: backyard-university
@@ -25,6 +25,7 @@ meta:
     9a1ceb67-8702-4d71-ab27-c1ce54eeedb5: 'single line plaintext' # single line plaintext
     32ceb6f1-4fab-4064-b3da-23186711b4e2: Url # Url
     83ff54c4-14e8-4364-ab22-626c8615f0ac: backyard-university # backyard-university
+    91db173b-0a25-4a07-9d59-d04125e8337e: date # date
     95de9ce8-1ed9-4d90-8330-a98cdc27fc0e: backyard-university # backyard-university
     277cebc1-e5f9-4f08-a729-1ed4feaa3cfb: 'Text Link' # Text Link
     734d4095-bd96-4d2a-ad75-084d7befc967: Instructor # Instructor
@@ -38,9 +39,11 @@ meta:
     a50c4bce-6e97-4d46-8fb9-c6f75a333e78: Details # Details
     a6877f4d-9055-4da1-a5b1-c4170ac02cd4: instructor # instructor
     b2b958cd-3387-41a9-9f93-74fffdb318e6: CTA # CTA
-    cb8918ee-8e0f-44e0-9067-15f06fca63ff: 'content builder ck' # content builder ck
+    cb8918ee-8e0f-44e0-9067-15f06fca63ff: CKEditor # CKEditor
     d897fca1-8cdf-48df-9ab9-37e07bf9b10c: images # images
     d449752f-c799-474e-b76e-14a9c8189f9e: Simple # Simple
+    ddd1978f-309c-4f47-a7f1-45370444142f: 'class cost' # class cost
+    e9b57168-2994-4fbe-98e0-32be8ea9ccdc: time # time
     fc1192e1-8612-4a29-9177-ca5dd3c25733: TextLink # TextLink
 plugins:
   ckeditor:

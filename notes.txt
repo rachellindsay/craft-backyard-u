@@ -1,0 +1,63 @@
+layout template
+  - main html
+  - navbar
+  - footer
+
+error page
+
+main page
+  - logo with name, tagline description of what BU is
+  - class list
+    - instead of accordion, a row of class images with short description and date
+  - journal
+    - row of journal entries or just the most recent one
+  - events
+  - instagram
+
+class page
+  - current classes
+      - classes can have dates that expire - is it possible to have classes move to past classes after the class date?
+      - short description (shows with small photo in row that when selected expands into complete class info )
+  - past classes
+
+  class info
+    - class title
+    - date
+    - short description
+    - long description
+    - details table
+        - date, time
+        - location
+        - cost
+    - cta: registration link
+    - images (will need to figure out how to handle situations when no photo is added and to be able to accomodate any number of photos - should there be a limit?)
+
+instructor
+  - instructor bios
+    - name
+    - image (limit to one? what if there is no photo?)
+    - bio
+    - cta: link to personal page, instagram, etc.
+    - link to journal entries
+
+journal
+  - hero
+    - journal entries
+      - title
+      - date
+      - author (link to instructor bio)
+      - rich text field 
+        - cta: links 
+      - images
+      - tags
+  tags: select journal entries by tag
+
+about
+  - how did backyard university come about and what is the vision
+
+coaching
+
+events
+  - listing of upcoming mostly third-party events: sales, open gardens, fundraisers, educational opportunities, etc.
+
+      

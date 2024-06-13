@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: date
+instructions: null
+name: date
+searchable: false
+settings:
+  max: null
+  min: '2023-09-01T00:00:00-07:00'
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

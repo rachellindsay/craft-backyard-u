@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Backyard University PDX</title>
+    <link rel="icon" type="image/x-icon" href="/images/bufavicon.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    {# <section class="classes">
+      <h2 class="workshops">Past Classes</h2>
+
+      <ul id="accordion" class="workshop">
+        <div class="past-class">
+          <li>
+            <!-- text/img that shows when accordion closed -->
+            <button
+              class="open"
+              aria-controls="content-1"
+              aria-expanded="false"
+              id="accordion-control-1"
+            >
+              <h3 class="date">Saturday, April 20, 2024 · time TBD</h3>
+              <h3>
+                Organic Vegetable Gardening: Companion Planting, Succession
+                Planting, and More
+              </h3>
+              <h3 class="location">
+                Green Lents Community Tool Library<br />9215 SE Ramona St,
+                Portland, OR 97266
+              </h3>
+              <img
+                src="images/ogVegGarden/og_veg_gdn2.jpg"
+                class="workshop-img"
+                alt="newly planted lettuce and celery"
+              />
+
+              <h3 class="intro">
+                Learn how to use companion planting, succession planting, and
+                vertical gardening techniqes to maximize your yield and make the
+                best use of your space in the vegetable garden this year. With
+                smart planning, every garden (and every gardener) can use these
+                methods to avoid pest and disease issues and yield an abundant
+                harvest.
+                <!--<span>(more details...)</span>-->
+              </h3>
+            </button>
+            <!-- text that shows when open -->
+            <div class="acc-item-content" aria-hidden="true" id="content-1">
+              <div>
+                <p>Free to all!</p>
+                <p>
+                  Reservations and sign-up are not required, but requested for
+                  anonymous grant reporting statistics.
+                </p>
+                <p>Attendance for the entire workshop is recommended.</p>
+
+                <br />
+                <div class="reg">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSduyMzejrgsGOO88ebp0qhtjZuiZVRtuFl-gh1oF-5XGI31xg/viewform"
+                    class="register"
+                  >
+                    Register here
+                  </a>
+                </div>
+                <br />
+                <div class="bio">
+                  <p class="instructor">About the instructor:</p>
+                  <p>
+                    Jessica Wood, founder of Backyard University, got a
+                    community garden plot in 2009 and took some vegetable
+                    gardening classes at a local independent garden center while
+                    on leave from college. Today, she's a full fledged
+                    horticultural professional who works at Iseli, a wholesale
+                    specialty conifer and Japanese maple nursery in Boring, OR,
+                    and earned a landscape design degree. She loves to teach and
+                    share her passion for growing her own food and her
+                    appreciation for the wonder that plants and natural
+                    ecosystems never cease to inspire. She believes that
+                    nurturing a connection with plants grounds us within
+                    ourselves and empowers us to cultivate meaningful community
+                    relationships and resources. She still calls her community
+                    garden plot home and in her free time, you'll find her
+                    weeding cucumbers and harvesting strawflowers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Seed bombs -->
+          <li>
+            <button
+              class="open"
+              aria-controls="content-seedbomb"
+              aria-expanded="false"
+              id="accordion-control-seedbomb"
+            >
+              <h3 class="date">Saturday, November 11, 2023 · 10:30am - 12pm</h3>
+              <h3>
+                Native Wildflower Seed Bomb Workshop - <span>(free class)</span>
+              </h3>
+              <h3 class="location">
+                Rockwood Market Hall<br />458 SE 185th Avenue Portland, OR 97233
+              </h3>
+              <img
+                src="images/SeedBomb/seed_bomb_crop.png"
+                class="workshop-img"
+                alt="A handful of wildflower seed bombs"
+              />
+
+              <h3 class="intro">
+                Make your own native wildflower seed bombs! Get your hands dirty
+                and learn about wildflowers in this free class. Kids are
+                welcome!
+              </h3>
+            </button>
+            <div
+              class="acc-item-content"
+              aria-hidden="true"
+              id="content-seedbomb"
+            >
+              <div>
+                <p>
+                  Start a riot of diversity with your own handmade native
+                  wildflower seed bombs!! Have you been plotting to reestablish
+                  wildlife habitat in the city? Do you have the itch to bring
+                  back native flora to abandoned spaces? Come join us for a
+                  workshop where we can team up to equip ourselves with radical
+                  tools for regenerating urban biodiversity.
+                </p>
+                <p>
+                  In this class, we will talk about wildflower ecology and
+                  demonstrate how to create your own wildflower filled seed
+                  bombs, with "guerrilla habitat restoration" in mind.
+                </p>
+                <p>
+                  All resources will be provided. We will provide empty egg
+                  cartons for seed ball storage & drying, but please bring your
+                  own empty egg cartons if you have any.
+                </p>
+                <p>
+                  Once dried, they are ready for "sowing," or they make a great
+                  gift that keeps on giving!
+                </p>
+                <p>
+                  Included with the class: Clay, worm castings, and native
+                  wildflower seeds to make 40-60 seed bombs to take home.
+                </p>
+                <p>
+                  This is a kid-friendly class! All children must be accompanied
+                  by an adult.
+                </p>
+                <p class="instructor">About the instructor:</p>
+                <p>
+                  {{ entry.instructor }}
+                </p>
+              </div>
+              <!-- Link to Eventbrite
+                    <div>
+                      <a
+                        href="https://www.eventbrite.com/e/native-wildflower-seed-bomb-workshop-tickets-719779619217"
+                        class="register"
+                      >
+                        Register here
+                      </a>
+                    </div>
+                    <br />
+                    -->
+            </div>
+          </li>
+
+          <!--Wood chips-->
+          <li>
+            <button
+              class="open"
+              aria-controls="content-woodchip"
+              aria-expanded="false"
+              id="accordion-control-woodchip  "
+            >
+              <h3 class="date">Sunday, November 5, 2023 · 10:30am - 12:30pm</h3>
+              <h3>What to Expect When You're Expecting Wood Chips</h3>
+              <img
+                src="images/WoodChips/wood_chip_crop.png"
+                class="workshop-img"
+                alt="A pile of arborist wood chips"
+              />
+
+              <h3 class="intro">
+                Tour Brad's garden, which he's created using wood chip mulch
+                from ChipDrop, and learn how to use this amazing free resource
+                in your yard.
+              </h3>
+            </button>
+            <div
+              class="acc-item-content"
+              aria-hidden="true"
+              id="content-woodchip"
+            >
+              <div>
+                <p>
+                  Join Brad Kay in his backyard, which he’s transformed over the
+                  last three years from a blank slate to a dynamic landscape
+                  full of food and flowers using free wood chips from ChipDrop.
+                  He will take you through the process of designing a low
+                  maintenance and drought tolerant garden using wood chips,
+                  starting with the best way to approach the steaming mountain
+                  of mulch dropped in your driveway all the way through to
+                  strategies to build the garden of your dreams. Learn how to
+                  utilize this amazing free resource to promote healthy soil,
+                  create pollinator habitat, and to deter weeds and disease.
+                </p>
+                <p>
+                  This class takes place at a private residence in the
+                  Montavilla neighborhood. The address will be provided upon
+                  registration.
+                </p>
+                <p>
+                  We will meet outside, so please dress appropriately. If it is
+                  sunny, we will gather in the backyard. If it is raining,
+                  instruction will move to an unheated workshop that opens out
+                  into the garden.
+                </p>
+                <p class="instructor">About the instructor:</p>
+                <p>
+                  Brad is a lifelong gardener and horticultural hobbyist
+                  originally from Australia. After leaving corporate life behind
+                  in 2017, he's pursued his passion for plants. He founded a
+                  landscape design company and worked at a leading local retail
+                  nursery, through which he has developed a practical working
+                  knowledge of design, plant selection, planting fundamentals,
+                  and garden maintenance. He has a particular interest in
+                  natural gardening methods, drought tolerant and low design,
+                  creating habitat for insects and pollinators, and especially,
+                  in using wood chips. His carefully curated, exuberant garden
+                  in Montavilla speaks to his thoughtful attention to detail and
+                  his commitment to in his creation of a layered landscape that
+                  invites plant, animal, and insect diversity on as many levels
+                  as possible.
+                </p>
+              </div>
+              <!--  Link to Eventbrite 
+            <div>
+              <a
+                href="https://www.eventbrite.com/e/what-to-expect-when-youre-expecting-wood-chips-tickets-744676135367"
+                class="register"
+              >
+                Register here
+              </a>
+            </div>
+            <br />
+            --></div>
+          </li>
+
+          <!-- Natives -->
+          <li>
+            <button
+              class="open"
+              aria-controls="content-native"
+              aria-expanded="false"
+              id="accordion-control-native"
+            >
+              <h3 class="date">Saturday, November 4, 2023 · 10am - 12pm</h3>
+              <h3>Native Plant Propagation 101: Shrubs and Trees</h3>
+              <img
+                src="images/Natives/red_twig_crop.jpg"
+                class="native"
+                alt="native plants"
+              />
+
+              <h3 class="intro">
+                Learn how to propagate trees and shrubs native to the Willamette
+                Valley. Collect a variety of cuttings and pot them up to take
+                home!
+                <!--<span>(more details...)</span>-->
+              </h3>
+            </button>
+            <div
+              class="acc-item-content"
+              aria-hidden="true"
+              id="content-native"
+            >
+              <div>
+                <p>
+                  Join Rachel Tanzer to learn the basics of native plant
+                  propagation, with a focus on Willamette Valley native shrubs
+                  and trees. We will gather outdoors (under cover, if raining)
+                  for a brief presentation followed by a hands-on workshop where
+                  we will find native plants in the field and learn how to
+                  propagate from cuttings. Participants will collect cuttings
+                  from several kinds of trees and shrubs and pot them up.
+                </p>
+                <p>
+                  When registering for this event, please indicate if you will
+                  be able to bring pruners or if you need a pair to be provided
+                  for you. Expect to be out in the rain when gathering cuttings
+                  and dress accordingly.
+                </p>
+                <p class="instructor">About the instructor:</p>
+                <p>
+                  Rachel Tanzer is an Assistant Ecological Designer at Symbiop
+                  Landscaping and specializes in restoring habitat and creating
+                  climate resilient landscapes that integrate native plants and
+                  edible plants. Check out her portfolio here. When she's not
+                  outside in the field, she's outside hiking with her dogs or
+                  running.
+                </p>
+              </div>
+              <div class="reg">
+                <a
+                  href="https://www.eventbrite.com/e/native-plant-propagation-101-shrubs-and-trees-tickets-744626657377"
+                  class="register"
+                >
+                  Register here
+                </a>
+              </div>
+              <br />
+            </div>
+          </li>
+
+          <!-- Cover crops-->
+          <li>
+            <!-- text/img that shows when accordion closed -->
+            <button
+              class="open"
+              aria-controls="content-1"
+              aria-expanded="false"
+              id="accordion-control-1"
+            >
+              <h3 class="date">
+                Saturday, October 21, 2023 · 10:30am - 12:30pm
+              </h3>
+              <h3>Putting Your Vegetable Garden to Bed</h3>
+              <img
+                src="images/CoverCrop/cover_crop_crop.jpg"
+                class="workshop-img"
+                alt="blooming crimson clover cover crop"
+              />
+              <h3 class="intro">
+                Learn how to winterize your vegetable garden using green manure,
+                composing techniques, and soil conditioners. Take home cover
+                crop seeds!
+                <!--<span>(more details...)</span>-->
+              </h3>
+            </button>
+            <!-- text that shows when open -->
+            <div class="acc-item-content" aria-hidden="true" id="content-1">
+              <div>
+                <p>
+                  After summer is over and the last tomatoes have been
+                  harvested, it's time to put your vegetable garden to bed for
+                  the winter. Properly preparing your beds now lays the
+                  foundation for ease and abundance next spring. Join
+                  co-teachers Rachel and Jessica to discuss creative composting
+                  methods, pH amendment, and using cover crops to suppress weeds
+                  and improve the health and structure of your soil. You’ll
+                  learn how to choose the ideal cover crops for your beds based
+                  on their unique nutrient needs and be able to incorporate them
+                  into your yearly crop rotation plan. We will also talk about
+                  our favorite fall planted vegetable, garlic! Explore Rachel’s
+                  home garden that combines fruit trees and raised beds with an
+                  extraordinary collection of drought tolerant ornamentals and
+                  celebrate the harvest with other plant nerds.
+                </p>
+                <p>
+                  You'll leave with a sampler of cover crop seeds and the
+                  knowledge of how to use them!
+                </p>
+                <p>
+                  This class will be held at a private residence in the
+                  Brentwood-Darlington neighborhood. Address will be provided
+                  upon registration.
+                </p>
+                <p>
+                  This class will be held outside. Please dress appropriately.
+                  If it does rain, we will meet inside and make forays out to
+                  the garden for demonstrations.
+                </p>
+                <p class="instructor">About the instructors:</p>
+
+                <p>
+                  Jessica Wood, founder of Backyard University, got a community
+                  garden plot in 2009 and took some vegetable gardening classes
+                  at a local independent garden center while on leave from
+                  college. Today, she's a full fledged horticultural
+                  professional who works at Iseli, a wholesale specialty conifer
+                  and Japanese maple nursery in Boring, OR, and earned a
+                  landscape design degree. She loves to teach and share her
+                  passion for growing her own food and her appreciation for the
+                  wonder that plants and natural ecosystems never cease to
+                  inspire. She believes that nurturing a connection with plants
+                  grounds us within ourselves and empowers us to cultivate
+                  meaningful community relationships and resources. She still
+                  calls her community garden plot home and in her free time,
+                  you'll find her weeding cucumbers and harvesting strawflowers.
+                </p>
+
+                <p>
+                  Rachel Lindsay knows the botanical name of that one cool
+                  flower that you can't remember and she can tell you how to
+                  grow it too. And she can tell you how to raise chickens, prune
+                  fruit trees, keep bees, tame feral cats, sew, can, code,
+                  create a website, or knit socks. This maker and gardener tends
+                  a garden bursting with every kind of collector's plant but
+                  she's also traveled all over the world. No one waters less in
+                  summer or grows sweeter mulberries. Someday, she and her
+                  partner hope to move to the San Juan Islands, where they will
+                  continue keeping cats, collecting sewing machines, and of
+                  course, gardening.
+                </p>
+              </div>
+              <!-- link to Eventbrite -->
+            </div>
+          </li>
+        </div>
+      </ul> #}
+      {% endfor %}
+    </section>
+
+
+
+
+
+    
+    <footer>
+      <div class="social">
+        <span class="email">
+          <a href="mailto:backyarduniversitypdx@gmail.com">
+            backyarduniversitypdx@gmail.com
+          </a>
+        </span>
+        <div class="social-links">
+          <a href="https://www.instagram.com/backyard.university/">
+            <img src="logo/Instagram_Glyph_Black.svg" alt="instagram logo"/>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61552290771504">
+            <img src="logo/Facebook_Logo_Primary.png" alt="facebook logo"/>
+          </a>
+        </div>
+      </div>
+      <h5>Copyright ©2024 Backyard University</h5>
+      <h5>Portland, Oregon</h5>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+
+</html>

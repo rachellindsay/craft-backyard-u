@@ -34,17 +34,10 @@
       </p>
     </section>
 
-    <!-- Newsletter signup goes here-->
-    <!-- <section>
-      <h2 class="newsletter">
-        <a href="signup.html"
-          >Sign up to receive the Backyard University newsletter</a
-        >
-      </h2>
-    </section> -->
-
     <!-- accordion drop down for class descriptions and links to Eventbrite -->
+    {% set classes = craft.entries.section('classes').limit(3).all() %}
     <section class="classes">
+
       <h2 class="workshops">Upcoming Classes</h2>
       <div class="more-info">
         <!-- Fall Vegetable Garden-->
@@ -56,8 +49,8 @@
           >
         </p>
       </div>
-
-      <ul id="accordion" class="workshop">
+      {% for class in classes %}
+      {# <ul id="accordion" class="workshop">
         <li>
           <!-- text/img that shows when accordion closed -->
           <button
@@ -65,89 +58,33 @@
             aria-controls="content-1"
             aria-expanded="false"
             id="accordion-control-1"
-          >
-            <h3 class="date">Saturday, July 13, 2024 · 10:30am - 12:00pm</h3>
-            <h3>Planning the Fall Vegetable Garden</h3>
+          > #}
+          <a href="{{ class.url }}>
+            <h3 class="date">{{ class.dateTime }}</h3>
+            
+            <h3>{{ class.title }}</h3>
             <img
-              src="images/kale.jpg"
+              src="{{ class.images.one().url() }}"
               class="workshop-img"
-              alt="blooming crimson clover cover crop"
+              alt="{{ class.title }}" 
             />
             <h3 class="intro">
-              Thanks to PNW’s mild maritime climate, you can enjoy fresh produce
-              from your vegetable garden nearly all year round. Take advantage
-              of this by planting a fall garden in midsummer.
-              <!--<span>(more details...)</span>-->
+              {{ class.shortDescription }}
             </h3>
-          </button>
+          </a>
+          {# </button>
           <!-- text that shows when open -->
-          <div class="acc-item-content" aria-hidden="true" id="content-1">
-            <div>
-              <p>
-                Thanks to PNW’s mild maritime climate, you can enjoy fresh
-                produce from your vegetable garden nearly all year round. Take
-                advantage of this by planting a fall garden in midsummer. Just
-                as summer crops start to wind down, cool season favorites like
-                carrots, beets, broccoli, cauliflower, will reach their peak. In
-                this class you will learn everything you need to succeed with
-                your fall vegetable garden, including proper planting timing,
-                variety selection, fertilizing, pest and disease management, and
-                season extension techniques, from co-teachers Jessica and Rachel
-                in a SE Portland backyard. You’ll have the opportunity to
-                explore a dynamic landscape that includes a raised bed vegetable
-                garden, fruit trees, drought tolerant plantings, and even a
-                beehive.
-              </p>
-              <p>
-                You’ll take home a collection of vegetable seedlings well suited
-                for fall harvest, so you can get started planting your garden
-                right away.
-              </p>
-              <p>
-                Address for location, a residence in the Brentwood-Darlington
-                neighborhood, will be provided upon registration.
-              </p>
-              <p>
-                This class will be held outside. Please dress appropriately for
-                summer weather. Refreshments will be provided.
-              </p>
-              <p class="instructor">About the instructors:</p>
-
-              <p>
-                In 2009, Jessica Wood thought it would be fun to try growing her
-                own strawberries and tomatoes, so she got a community garden
-                plot and decided to take a couple classes from a local
-                independent garden center. Today, she's a full-fledged
-                horticultural professional who works at wholesale specialty
-                conifer and Japanese maple nursery in Boring, OR, and earned a
-                landscape design degree. She founded Backyard University to
-                share her passion for home gardening and her appreciation for
-                the wonder that plants and natural ecosystems never cease to
-                inspire. She still calls her community garden plot home and in
-                her free time, you'll find her weeding cucumbers and harvesting
-                strawflowers.
-              </p>
-
-              <p>
-                Rachel Lindsay knows the botanical name of that one cool flower
-                that you can't remember and she can tell you how to grow it too.
-                And she can tell you how to raise chickens, prune fruit trees,
-                keep bees, tame feral cats, sew, can, code, create a website, or
-                knit socks. This maker and gardener tends a garden bursting with
-                every kind of collector's plant but she's also traveled all over
-                the world. No one waters less in summer or grows sweeter
-                mulberries. Someday, she and her partner hope to move to the San
-                Juan Islands, where they will continue keeping cats, collecting
-                sewing machines, and of course, gardening.
-              </p>
-            </div>
+          <div class="acc-item-content" aria-hidden="true" id="content-1"> #}
+            
+            {# </div>
             <!-- link to Eventbrite -->
-          </div>
-        </li>
-      </ul>
+          </div> #}
+        {# </li>
+      </ul> #}
+      {% endfor %}
     </section>
 
-    <section class="classes">
+    {# <section class="classes">
       <h2 class="workshops">Past Classes</h2>
 
       <ul id="accordion" class="workshop">
@@ -294,20 +231,7 @@
                 </p>
                 <p class="instructor">About the instructor:</p>
                 <p>
-                  Jessica Wood, founder of Backyard University, got a community
-                  garden plot in 2009 and took some vegetable gardening classes
-                  at a local independent garden center while on leave from
-                  college. Today, she's a full fledged horticultural
-                  professional who works at Iseli, a wholesale specialty conifer
-                  and Japanese maple nursery in Boring, OR, and earned a
-                  landscape design degree. She loves to teach and share her
-                  passion for growing her own food and her appreciation for the
-                  wonder that plants and natural ecosystems never cease to
-                  inspire. She believes that nurturing a connection with plants
-                  grounds us within ourselves and empowers us to cultivate
-                  meaningful community relationships and resources. She still
-                  calls her community garden plot home and in her free time,
-                  you'll find her weeding cucumbers and harvesting strawflowers.
+                  {{ entry.instructor }}
                 </p>
               </div>
               <!-- Link to Eventbrite
@@ -567,7 +491,8 @@
             </div>
           </li>
         </div>
-      </ul>
+      </ul> #}
+    
     </section>
 
     <!-- <section>

@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: Details
             max: null
             min: null
             name: null
@@ -37,10 +37,10 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 7c9699d9-6b10-462d-b29d-0f55051ded8f # Simple Table
-            handle: classDetails
+            handle: Details
             includeInCards: false
             instructions: null
-            label: 'Class Details'
+            label: Details
             providesThumbs: false
             required: false
             tip: null

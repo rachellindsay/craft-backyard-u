@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: ckEditor
+instructions: 'Complete class description.'
+name: CKEditor
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: 853056af-c326-4731-a0cd-fe065d13d97f # ckeditor
+  createButtonLabel: 'New Content Module'
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  entryTypes:
+    - b2b958cd-3387-41a9-9f93-74fffdb318e6 # CTA
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field
