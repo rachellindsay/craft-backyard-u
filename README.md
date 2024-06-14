@@ -29,4 +29,4 @@
 
 ### Some thoughts on the database:
 
-ddev database lives in a docker volume, so it subject to being removed in a docker prune. Possible to back it up with: `ddev export-db > backup.sql`, restore it with `ddev import-db < backup.sql`. Access adminer with `ddev adminer`.
+ddev database lives in a docker volume, so it subject to being removed in a docker prune. Possible to back it up with: `ddev export-db > backup.sql`, restore it with `ddev import-db < backup.sql`. Access adminer with `ddev adminer` (if that doesn't work `ddev describe`).
