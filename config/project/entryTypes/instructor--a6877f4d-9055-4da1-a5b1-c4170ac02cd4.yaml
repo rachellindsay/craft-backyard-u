@@ -54,7 +54,7 @@ fieldLayouts:
             fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # CKEditor
             handle: bio
             includeInCards: false
-            instructions: null
+            instructions: 'Biographical details'
             label: bio
             providesThumbs: false
             required: false
