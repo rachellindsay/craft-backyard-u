@@ -4,6 +4,7 @@
   "require": {
     "craftcms/ckeditor": "4.0.6",
     "craftcms/cms": "5.1.7",
+    "marionnewlevant/picture": "5.0.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

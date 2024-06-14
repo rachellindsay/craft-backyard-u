@@ -1,25 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Backyard University PDX</title>
-    <link rel="icon" type="image/x-icon" href="/images/bufavicon.jpg" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+{% extends '_shared/_layout' %}
 
-  <body>
-    {# <section class="classes">
-      <h2 class="workshops">Past Classes</h2>
+{% block main %}
 
-      <ul id="accordion" class="workshop">
+  <section class="classes">
+      
+    {% set classImage = entry.images.one() %}                         
+      <h3>{{ entry.title }}</h3>
+      <h3 class="date">{{ entry.dateTime }}</h3> 
+      <h3 class="location">{{ entry.location }}<h3>
+      {% if classImage %} 
+        <img
+          src="{{ entry.images.one().url() }}"
+          class="workshop-img"
+          alt="{{ entry.title }}" 
+        />
+      {% endif %}
+      <p class="acc-item-content">
+        {{ entry.classDescription }}
+      </p>
+    {% set instructors = entry.instructor.all() %}
+      {% for instructor in instructors %}
+        <div class="bio">
+          <p class="instructor">About the instructor:</p>
+            {{ instructor.title }}
+        
+            {{ instructor.bio }}
+          
+        </div>
+      {% endfor %}
+
+  </section>
+     
+
+
+
+      {# <ul id="accordion" class="workshop">
         <div class="past-class">
           <li>
             <!-- text/img that shows when accordion closed -->
@@ -44,7 +59,7 @@
                 alt="newly planted lettuce and celery"
               />
 
-              <h3 class="intro">
+              <h3 class="acc-item-content">
                 Learn how to use companion planting, succession planting, and
                 vertical gardening techniqes to maximize your yield and make the
                 best use of your space in the vegetable garden this year. With
@@ -74,26 +89,7 @@
                   </a>
                 </div>
                 <br />
-                <div class="bio">
-                  <p class="instructor">About the instructor:</p>
-                  <p>
-                    Jessica Wood, founder of Backyard University, got a
-                    community garden plot in 2009 and took some vegetable
-                    gardening classes at a local independent garden center while
-                    on leave from college. Today, she's a full fledged
-                    horticultural professional who works at Iseli, a wholesale
-                    specialty conifer and Japanese maple nursery in Boring, OR,
-                    and earned a landscape design degree. She loves to teach and
-                    share her passion for growing her own food and her
-                    appreciation for the wonder that plants and natural
-                    ecosystems never cease to inspire. She believes that
-                    nurturing a connection with plants grounds us within
-                    ourselves and empowers us to cultivate meaningful community
-                    relationships and resources. She still calls her community
-                    garden plot home and in her free time, you'll find her
-                    weeding cucumbers and harvesting strawflowers.
-                  </p>
-                </div>
+                
               </div>
             </div>
           </li>
@@ -424,34 +420,7 @@
           </li>
         </div>
       </ul> #}
-      {% endfor %}
-    </section>
+      {# {% endfor %}
+    </section> #}
 
-
-
-
-
-    
-    <footer>
-      <div class="social">
-        <span class="email">
-          <a href="mailto:backyarduniversitypdx@gmail.com">
-            backyarduniversitypdx@gmail.com
-          </a>
-        </span>
-        <div class="social-links">
-          <a href="https://www.instagram.com/backyard.university/">
-            <img src="logo/Instagram_Glyph_Black.svg" alt="instagram logo"/>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61552290771504">
-            <img src="logo/Facebook_Logo_Primary.png" alt="facebook logo"/>
-          </a>
-        </div>
-      </div>
-      <h5>Copyright ©2024 Backyard University</h5>
-      <h5>Portland, Oregon</h5>
-    </footer>
-    <script src="index.js" type="text/javascript"></script>
-  </body>
-
-</html>
+{% endblock %}

@@ -4,12 +4,13 @@ instructions: null
 name: 'class cost'
 searchable: false
 settings:
-  currency: USD
-  defaultValue: null
-  max: null
-  min: 0
-  showCurrency: false
-  size: null
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Money
+type: craft\fields\PlainText
