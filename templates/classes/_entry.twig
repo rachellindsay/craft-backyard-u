@@ -2,35 +2,33 @@
 
 {% block main %}
 
-  <section class="classes">
+  <section class="class-info">
       
-    {% set classImage = entry.images.one() %}                         
-      <h3>{{ entry.title }}</h3>
-      <h3 class="date">{{ entry.dateTime }}</h3> 
-      <h3 class="location">{{ entry.location }}<h3>
-      {% if classImage %} 
+    {# {% set mainImage = entry.classImage.one().url() %}  #}
+      <h3 class="class-date">{{ entry.date }} | {{ entry.time }}</h3>                         
+      <h3 class="class-title">{{ entry.title }}</h3>
+      
+      <h3 class="class-location">{{ entry.location }}<h3>
+      {# {% if mainImage %}  #}
         <img
-          src="{{ entry.images.one().url() }}"
-          class="workshop-img"
+          src="{{ entry.classImage.one().url() }}"
+          class="class-img"
           alt="{{ entry.title }}" 
         />
-      {% endif %}
-      <p class="acc-item-content">
+      {# {% endif %} #}
+      <p class="class-description">
         {{ entry.classDescription }}
       </p>
     {% set instructors = entry.instructor.all() %}
-      {% for instructor in instructors %}
-        <div class="bio">
-          <p class="instructor">About the instructor:</p>
-            {{ instructor.title }}
-        
-            {{ instructor.bio }}
-          
-        </div>
+      <div>
+        <h3 class="instructor">About the instructor:</h3>
+          {% for instructor in instructors %}   
+              {{ instructor.bio }}
+      </div>
       {% endfor %}
 
   </section>
-     
+    
 
 
 

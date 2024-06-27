@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: simpleTable
 instructions: null
-name: 'Simple Table'
+name: 'simple Table'
 searchable: false
 settings:
   addRowLabel: 'Add a row'

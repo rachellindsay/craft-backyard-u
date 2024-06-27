@@ -5,22 +5,22 @@
 {% set buLogo = entry.buLogo.one() %}
 
   <body>
-    <header class="banner">
+    {# <header class="banner">
     {% if buLogo %}
       <img
-        src="{{ buLogo.getUrl()}}"
+        src="{{ buLogo.getUrl() }}"
         class="logo"
         alt="Backyard University logo"
       />
     {% endif %}
-    </header>
-
+    </header> #}
+{# ********************** into blurb ************************ #}
     <section class="about-text">
         {{ entry.tagline }}
     </section>
 
-
-    {% set classes = craft.entries.section('classes').limit(3).all() %}
+{# *********************** classes ***************************** #}
+  
     <section class="classes">
 
       <h2 class="workshops">Upcoming Classes</h2>
@@ -32,27 +32,12 @@
           >
         </p>
       </div>
-
       <div>
-      {% for class in classes %}
-        {% set classImage = class.images.one() %}
-          <h3 class="date">{{ class.dateTime }}</h3>
-          
-          <a href="{{ class.url }}">  
-            <h3>{{ class.title }}</h3>
-            {% if classImage %} 
-              <img
-                src="{{ class.images.one().url() }}"
-                class="workshop-img"
-                alt="{{ class.title }}" 
-              />
-            {% endif %}
-          </a>
-            
-          <h3>
-              {{ class.shortDescription }}
-          </h3>
-      {% endfor %}
+        {% include "_shared/_classGrid" with {
+            limit: 10,
+            section: 'classes'
+        } %}
+      
       </div>
     </section>
 

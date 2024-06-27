@@ -1,0 +1,5 @@
+<div>
+    {% for cta in entry.textLink %}
+    <a href="{{ cta.linkUrl }}">{{ cta.linkText}}<span aria-hidden="true">&rarr;</span></a>
+    {% endfor %}
+</div>

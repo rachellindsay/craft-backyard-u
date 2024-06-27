@@ -1,15 +1,27 @@
-/*
-
-font-family: 'Nunito Sans', sans-serif;
-
-
+/* 
 red: #cf1d00
-blue: #75daff
+blue: #75daff  
 */
 
-body {
+
+:root {
+  font-family: 'Nunito Sans', sans-serif;
+  color: darkslategray;
   background-color: #75daff;
-}
+
+  /* * custom props * */
+  --text-color: darkslategray;
+  --text-accent-color-0: aliceblue;
+  --text-accent-color-1: lightslategray;
+  --accent-color-0: aliceblue;
+  --accent-color-1: #cf1d00;
+  --accent-color-2: lightslategray;
+  --accent-color-3: darkslategray;
+  
+/* ***************   layout     *************** */
+
+/* ** header/logo** */
+
 header {
   position: relative;
 }
@@ -22,317 +34,154 @@ header .logo {
   object-fit: contain;
 }
 
-img {
-  max-width: 100%;
+/* **navigation** */
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
+nav {
+  text-align: right;
+  padding: 5px;
+  text-transform: uppercase;
+}
+nav a {
+  color: var(--accent-color-2);
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0 10px;
+}
+nav a:hover {
+  color: var(--accent-color-3);
+}
+
+/* ***************   homepage   *************** */
 .about-text {
   width: 80%;
-  margin: 0 auto 0px auto;
+  margin: 20px auto 20px auto;
   max-width: 1200px;
-  background-color: #75daff;
-}
-
-.about-text p {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3em;
-  color: darkslategray;
+  color: var(--text-color);
   text-align: center;
 }
-/* style for newsletter signup */
-section .newsletter {
-  width: 60%;
-  margin: 20px auto 30px auto;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: large;
-  text-align: center;
-  background-color: #75daff;
-  color: #cf1d00;
-  text-transform: none;
-  border: 2px dashed #cf1d00;
-  border-radius: 0px;
-  padding: 5px 5px 5px 5px;
-}
 
-a:link {
-  color: darkslategray;
-  text-transform: none;
-  text-decoration: none;
-}
-a:hover {
-  color: #cf1d00;
-  text-decoration: underline;
-}
-a:visited {
-  text-transform: none;
-  text-decoration: none;
-  color: darkslategray;
-}
-a:visited:hover {
-  color: #cf1d00;
-  text-transform: underline;
-}
+/* ***************   classes   *************** */
 
-/* style for accordian */
-
-section .workshops {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: large;
-  background-color: #cf1d00;
+/* * general info* */
+.workshops {
+  font-size: 1.3em;
+  background-color: var(--accent-color-1);
   color: aliceblue;
-  width: 75%;
+  width: 85%;
   padding-left: 10px;
   margin: auto;
 }
 
-section .more-info {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
+.more-info {
+  font-weight: 700;
   font-size: 1.1em;
-  color: darkslategray;
-  width: 70%;
-  margin: auto;
-}
-
-section .stay-tuned {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #cf1d00;
-  text-align: center;
-}
-
-#accordion {
+  color: var(--text-color);
   width: 80%;
-  max-width: 900px;
-  min-width: 275px;
-  margin: 20px auto 20px auto;
-  list-style: none;
-  background-color: aliceblue;
-}
-
-#accordion ul {
-  list-style-type: none;
-}
-#accordion li {
-  border-bottom: none;
-  width: 100%;
   margin: auto;
-  background-color: aliceblue;
-  list-style: none;
+}
+.more-info a:link {
+  color: var(--text-color)
 }
 
-#accordion h3 {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #cf1d00;
-  color: aliceblue;
-  padding: 5px;
-  margin: 0 0 5px 0;
-  text-align: left;
+.more-info a:hover {
+  color: var(--text-accent-color);
 }
-#accordion h3 span {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1em;
-  color: aliceblue;
+.more-info a:visited {
+  color: var(--text-color)
 }
 
-#accordion button .date {
-  text-transform: none;
-  background-color: aliceblue;
-  color: darkslategray;
-  font-size: 1.3em;
-  margin: 0;
-  padding: 10px 0 0 0;
-}
-
-#accordion .location {
-  text-transform: none;
-  background-color: aliceblue;
-  color: darkslategray;
-  font-size: 1em;
-  margin: 0;
+/* * class details/image/description * */
+.class-info {
+  width: 80%;
+  margin: auto;
   padding: 0;
+  background-color: var(--accent-color-0);  
 }
-
-#accordion button .intro {
-  font-family: "Nunito Sans", sans-serif;
-  font-style: italic;
-  font-size: 1.3em;
-  text-transform: none;
-  background-color: aliceblue;
-  color: darkslategray;
+.class-date{
+  background-color: var(--accent-color-2);
+  color: var(--text-accent-color-0);
+  font-size: 1em;
+  margin: 0;
+  padding: 1px 0 1px 5px;
 }
-
-span {
-  font-size: smaller;
-  color: #cf1d00;
+.class-link:hover {
+  opacity: 0.5;
 }
-
-#accordion button:focus {
-  border-radius: 0px;
-  outline: none;
-}
-
-#accordion button.open {
-  outline: none;
-  background-color: aliceblue;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  border-bottom: 1px solid darkslategrey;
-  color: darkslategray;
-  text-align: left;
-  border-radius: 0px;
-}
-
-#accordion button.close {
-  outline: none;
-  background-color: aliceblue;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  color: darkslategray;
-  text-align: left;
-}
-
-#accordion p {
-  font-family: "Nunito Sans", sans-serif;
-  margin: 0px auto 0px auto;
-}
-#accordion .instructor {
-  font-size: medium;
-  font-weight: 600;
-  text-decoration: underline;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.acc-item-content:last-child {
-  border-bottom: 1px solid DarkSlateGray;
-}
-
-#accordion button.open::after {
-  /* content: "\002B"; */
-  content: "more details";
-  font-weight: 600;
-  font-size: small;
-  color: slategray;
-  border: 2px solid #cf1d00;
-  border-radius: 5px;
-  padding: 5px;
-  float: right;
-}
-
-.acc-item-content {
-  padding: 0px 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-
-#accordion button.open.active:after {
-  /* content: "\2212"; */
-  content: "fewer details";
-  font-weight: 600;
-  font-size: small;
-  color: slategray;
-  border: 2px solid #cf1d00;
-  border-radius: 5px;
-  padding: 5px;
-  float: right;
-}
-
-.workshop img {
-  width: 100%;
-  height: 20%;
-}
-
-.workshop {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.workshop p {
-  padding: 10px;
-  background-color: aliceblue;
-  color: darkslategray;
-}
-
-.register {
+.class-title {
+  font-weight: 700;
+  font-size: 1em;
   text-transform: uppercase;
-  text-decoration: none;
-  padding: 5px;
-  text-align: center;
-  background-color: aliceblue;
-  border: 2px solid #cf1d00;
-  border-radius: 5px;
-  color: #cf1d00;
-  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--accent-color-1);
+  color: var(--text-accent-color-0);
+  padding: 2px 5px;
+  margin: 5px 10px 5px 10px;
+  text-align: left;
+}
+.class-location {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: .8em;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.class-img {
+  max-width: 100%;
+  margin: 0 10px;
+  width: auto;
+  height: auto;
+}
+.class-short-description {
+  margin: 0 5px;
+  padding: 0 5px;
+  font-style: italic;
   font-weight: bold;
-  margin: 0 10px 0 10px;
 }
 
-.register:link {
-  color: darkslategray;
-  text-transform: none;
-  text-decoration: none;
-}
-.register:hover {
-  color: #cf1d00;
-  text-decoration: underline;
-}
-.register:visited {
-  text-transform: none;
-  text-decoration: none;
-  color: slategray;
-}
-
-.classes {
-  padding: 20px 0px 20px 0px;
-}
-
-#accordion .past-class .date {
-  text-decoration: line-through;
-}
+/* *****   footer    ***** */
 
 footer {
   margin: 40px auto 5px auto;
-  color: darkslategray;
-  font-family: "Nunito Sans", sans-serif;
 }
 .social {
   display: block;
   width: 70%;
   margin: auto;
 }
-
 .social img {
   width: 25px;
 }
-
 h5 {
-  font-family: "Nunito Sans", sans-serif;
   text-align: center;
   margin: 5px auto 5px auto;
 }
-
-.social .email {
-  font-size: medium;
+.email {
   font-weight: 700;
+  font-size: 1.1em;
+  color: var(--text-color);
 }
-
+.email a:link {
+  color: var(--text-color);
+}
+.email a:hover {
+  color: var(--text-accent-color);
+}
+.email a:visited {
+  color: var(--text-color);
+}
 .social span {
   display: block;
   text-align: left;
 }
-
 .social a {
   padding: 2px 20px 2px 0px;
 }
+
 /* responsive styles */
 
 @media screen and (max-width: 700px) {
@@ -356,8 +205,8 @@ h5 {
     margin: auto;
     text-align: center;
   }
-
-  #accordion {
+}
+/*  #accordion {
     width: 100%;
     max-width: 900px;
     min-width: 275px;
@@ -370,31 +219,4 @@ h5 {
     margin: auto;
     background-color: #75daff;
   }
-}
-
-div .newsletter-signup {
-  margin: auto;
-}
-
-/* signup.html (mail chimp css) */
-
-#mc_embed_signup {
-  background-color: #75daff;
-
-  clear: left;
-  font-family: "Nunito-Sans", sans-serif;
-  font-size: 14px;
-  width: 70%;
-  margin: auto;
-  padding: 20px;
-}
-#mc_embed_signup_scroll img {
-  display: block;
-  margin: auto;
-  max-height: 200px;
-}
-#mc_embed_signup_scroll h3 {
-  text-align: center;
-  padding: 20px 0 20px 0;
-  color: darkslategray;
-}
+*/}

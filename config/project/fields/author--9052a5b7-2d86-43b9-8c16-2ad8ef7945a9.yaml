@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: date
-instructions: 'date of post - June 26, 2024 (month dd, yyyy)'
-name: date
+handle: author
+instructions: 'author of the post'
+name: author
 searchable: false
 settings:
   byteLimit: null
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 4
   multiline: false
-  placeholder: 'month dd, yyyy'
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 7f560f57-e2c3-4cf4-9f34-08418c21731f # post
+handle: journal
+maxAuthors: 1
+name: journal
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  83ff54c4-14e8-4364-ab22-626c8615f0ac: # backyard-university
+    enabledByDefault: true
+    hasUrls: true
+    template: journal/_entry.twig
+    uriFormat: 'journal/{slug}'
+type: channel

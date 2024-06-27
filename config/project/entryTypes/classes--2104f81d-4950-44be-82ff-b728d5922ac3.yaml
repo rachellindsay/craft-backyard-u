@@ -15,7 +15,7 @@ fieldLayouts:
             id: null
             includeInCards: false
             inputType: null
-            instructions: null
+            instructions: 'Title of the class'
             label: 'Class Title'
             max: null
             min: null
@@ -36,11 +36,26 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9a1ceb67-8702-4d71-ab27-c1ce54eeedb5 # single line plaintext
-            handle: dateTime
+            fieldUid: 6365fd4a-8b7d-4e60-a260-0e998504e818 # image
+            handle: classImage
             includeInCards: false
-            instructions: 'Class day, date, start time, and end time: Saturday, October 21, 2023, 10:30am - 12:30pm'
-            label: 'date & time'
+            instructions: 'Add a single image as the main class photo that will appear on the main page as well as at the top of the individual class page.'
+            label: 'class image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eec3a0cb-d6fd-4d15-814a-a7952d75a03a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a1ceb67-8702-4d71-ab27-c1ce54eeedb5 # single line plaintext
+            handle: date
+            includeInCards: false
+            instructions: 'Date of class. This field is not formatted so please stick to this format to keep dates appearing uniform: Class day, date (Saturday, January 1, 2025)'
+            label: date
             providesThumbs: false
             required: false
             tip: null
@@ -52,9 +67,24 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 9a1ceb67-8702-4d71-ab27-c1ce54eeedb5 # single line plaintext
+            handle: time
+            includeInCards: false
+            instructions: 'Class start and end times . This field is not formatted so try to stick with this format to keep the dates appearing uniform: (10:30am - 12:30pm)'
+            label: time
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5afa7fb1-0ef3-418a-96d4-9e88a573cca3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a1ceb67-8702-4d71-ab27-c1ce54eeedb5 # single line plaintext
             handle: location
             includeInCards: false
-            instructions: null
+            instructions: 'Location of the class. If there is an address, keep this field general and use the next field for the address (i.e. Lents Tool Library, Private residence in B-D neighborhood)'
             label: location
             providesThumbs: false
             required: false
@@ -66,10 +96,10 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 277cebc1-e5f9-4f08-a729-1ed4feaa3cfb # Text Link
+            fieldUid: 277cebc1-e5f9-4f08-a729-1ed4feaa3cfb # text link
             handle: locationLink
             includeInCards: false
-            instructions: 'map link, website, etc.'
+            instructions: 'Link to address - enter address in text field and copy and paste link to address from google maps.'
             label: 'location link'
             providesThumbs: false
             required: false
@@ -84,7 +114,7 @@ fieldLayouts:
             fieldUid: 6879c3a2-493c-4b4f-941b-13799c080848 # plaintext-multiline
             handle: shortDescription
             includeInCards: false
-            instructions: null
+            instructions: 'One to two sentence intro for link. Will display with date, title, and main class image'
             label: 'short class description'
             providesThumbs: false
             required: false
@@ -96,25 +126,10 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 6365fd4a-8b7d-4e60-a260-0e998504e818 # image
-            handle: images
-            includeInCards: false
-            instructions: null
-            label: images
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8defc2d3-57f0-4d29-a9d6-b224c97ddab4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # CKEditor
+            fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # content builder CK
             handle: classDescription
             includeInCards: false
-            instructions: null
+            instructions: 'Long class description. Add links and additional photos here by clicking ''New Content'' drop down and selecting CTA for links or images for adding images other than the main class image. Once added to the description, placement of photos and links can be changed.'
             label: 'Class Description'
             providesThumbs: false
             required: false
@@ -129,7 +144,7 @@ fieldLayouts:
             fieldUid: ddd1978f-309c-4f47-a7f1-45370444142f # class cost
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'Cost of the class. To account for free classes this field is not formatted. Decide whether or not to use ''$30'' or ''$30.00'' and stick with it.'
             label: null
             providesThumbs: false
             required: false
@@ -141,10 +156,10 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 734d4095-bd96-4d2a-ad75-084d7befc967 # Instructor
+            fieldUid: 734d4095-bd96-4d2a-ad75-084d7befc967 # instructor
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'Click add instructor and select instructor name from list. This will add the instructor name and bio to the class listing. If instructor is not listed, save without instructor and add the instructor and then return and edit the class.'
             label: null
             providesThumbs: false
             required: false

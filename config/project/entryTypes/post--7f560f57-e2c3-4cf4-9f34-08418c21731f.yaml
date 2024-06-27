@@ -1,6 +1,6 @@
 color: pink
 fieldLayouts:
-  7bba22f1-4661-4324-8938-f7b6e797489c:
+  0933576c-90c1-4c73-bf01-c42e6f85b7d2:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: name
+            label: 'post title'
             max: null
             min: null
             name: null
@@ -30,49 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 7b4c27b5-7103-4a74-aa3b-c5af9e78fd7b
+            uid: a5b5d720-d624-4bd6-9943-7340830aba16
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6365fd4a-8b7d-4e60-a260-0e998504e818 # image
-            handle: instructorImage
-            includeInCards: false
-            instructions: null
-            label: 'instructor image'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b05923c5-1cc8-4c65-88b4-e741111aabf5
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # content builder CK
-            handle: bio
-            includeInCards: false
-            instructions: 'Biographical details. Additional photos can be added here'
-            label: bio
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 41c83ed7-d329-4db7-b741-e74942f1ef97
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: 6af3e72a-28f8-436e-a87f-388d973722d3
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 90308854-296d-4a84-a1a0-8579ecc3ecd1 # images
+            fieldUid: 91db173b-0a25-4a07-9d59-d04125e8337e # date
             handle: null
             includeInCards: false
             instructions: null
@@ -81,17 +45,47 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 32db5d82-c183-4d4c-b331-57a8e15d9769
+            uid: 842321f8-6b19-40e0-aa7c-4566e210f916
             userCondition: null
             warning: null
             width: 100
-        name: images
-        uid: 9d1d32ce-8a21-4dc0-83c2-7dea2038bf00
+          -
+            elementCondition: null
+            fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # content builder CK
+            handle: postContent
+            includeInCards: false
+            instructions: 'The content of the journal post'
+            label: 'post content'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c28894ad-eb71-41af-af5b-3bf35cfc897e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9052a5b7-2d86-43b9-8c16-2ad8ef7945a9 # author
+            handle: postAuthor
+            includeInCards: false
+            instructions: null
+            label: author
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13489b7e-4e75-4237-9452-dcd8ea002b0e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f72e491f-6bb7-4a54-add8-0f290e88b121
         userCondition: null
-handle: instructor
+handle: post
 hasTitleField: true
-icon: user
-name: instructor
+icon: book
+name: post
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

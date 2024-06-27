@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: instructor
 instructions: null
-name: Instructor
+name: instructor
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,7 +12,7 @@ settings:
   minRelations: null
   selectionLabel: 'Add instructor'
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   sources:
     - 'section:3156aee6-ecaa-4780-a974-6bc6956fe541' # instructors
   targetSiteId: null
