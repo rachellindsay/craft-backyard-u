@@ -1,0 +1,35 @@
+{% set entries = craft.entries 
+    .section(section)
+    .limit(limit)
+    .all()
+%}
+     
+
+
+        <div class="class-info">
+        {% for entry in entries %}
+        
+          <h3 class="class-date">{{ entry.date}} | {{ entry.time }}</h3> 
+      
+          {% set mainImage = entry.classImage %}         
+            
+            <a href="{{ entry.url }}" class="class-link">  
+              <h3 class="class-location">Location: {{ entry.location }}</h3>          
+              <h3 class="class-title">{{ entry.title }}</h3>
+              
+              {% if mainImage %} 
+                <img
+                  src="{{ entry.classImage.one().url() }}"
+                  class="class-img"
+                  alt="{{ entry.title }}" 
+                />
+              {% endif %}
+
+            </a>
+       
+            <p class="class-short-description">
+                {{ entry.shortDescription }}
+            </p>
+        {% endfor %}
+      </div>
+    

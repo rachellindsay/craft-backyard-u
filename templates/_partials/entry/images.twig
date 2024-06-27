@@ -1,0 +1,11 @@
+<div>
+    {% set entryImage = entry.image %}
+        {% for img in entry.image %}
+            {% if entryImage %} 
+                <img
+                    src="{{ img.url }}"
+                    alt="{{ img.title }}"
+                />
+            {% endif %}
+        {% endfor %}
+</div>

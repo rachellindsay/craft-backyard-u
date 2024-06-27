@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: textLink
 instructions: null
-name: 'Text Link'
+name: 'text link'
 searchable: false
 settings:
   addRowLabel: 'Add a row'

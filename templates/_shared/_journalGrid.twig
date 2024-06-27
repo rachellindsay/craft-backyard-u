@@ -1,0 +1,26 @@
+{% set entries = craft.entries 
+    .section(section)
+    .limit(limit)
+    .all()
+%}
+
+<div class="journal-entry">
+    {% for entry in entries %}
+        {# {% set entryImage = entry.image.one() %} #}
+            <h2>{{ entry.title }}</h2>
+
+            <h4>{{ entry.date }}</h4>
+
+            <h3>By: {{ entry.postAuthor }}</h3>
+
+            <p>{{ entry.postContent}}</p>
+
+            {# {% if entryImage %}
+                <img
+                    src="{{ entry.images.one().url() }}"
+                    class="post-img"
+                    alt="{{ entry.title }}"
+            {% endif %} #}
+            <h4>By: {{ entry.postAuthor }}</h4>
+    {% endfor %}
+</div>

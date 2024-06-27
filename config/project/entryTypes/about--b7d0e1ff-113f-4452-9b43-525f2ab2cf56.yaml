@@ -1,6 +1,6 @@
-color: emerald
+color: orange
 fieldLayouts:
-  011dec44-218c-4833-9d09-1750762404ac:
+  0555d587-c1cc-4f76-8892-b369d6d0a178:
     tabs:
       -
         elementCondition: null
@@ -15,8 +15,8 @@ fieldLayouts:
             id: null
             includeInCards: false
             inputType: null
-            instructions: null
-            label: Details
+            instructions: 'This page is for changing information about Backyard University'
+            label: About
             max: null
             min: null
             name: null
@@ -30,34 +30,55 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 2e99aca5-1973-43d7-b694-6b93682ecb8b
+            uid: 3c384b38-27ec-43bb-bf4c-270aa75b6977
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 7c9699d9-6b10-462d-b29d-0f55051ded8f # simple Table
-            handle: Details
+            fieldUid: cb8918ee-8e0f-44e0-9067-15f06fca63ff # content builder CK
+            handle: null
             includeInCards: false
             instructions: null
-            label: Details
+            label: 'About CKEditor'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5ba0584e-ad62-4065-80b5-d73e55a82e51
+            uid: 04423dbe-6709-4e19-9c2b-486173e1390a
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 2e50d571-20aa-4ea5-a81c-5aef0c7f74e8
+        uid: dc9dd224-a899-452b-9150-9e9f94db2da3
         userCondition: null
-handle: details
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 90308854-296d-4a84-a1a0-8579ecc3ecd1 # images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b0688e9-c660-4c20-bb46-dc60da94a21c
+            userCondition: null
+            warning: null
+            width: 100
+        name: images
+        uid: 177c9863-2167-48f8-a7dd-d88bd99295b2
+        userCondition: null
+handle: about
 hasTitleField: true
-icon: asterisk
-name: Details
-showSlugField: false
-showStatusField: false
+icon: acorn
+name: about
+showSlugField: true
+showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - d189f334-1f56-4f9c-8b27-9862c0607bda # listing page
+handle: classListing
+maxAuthors: 1
+name: 'class listing'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  83ff54c4-14e8-4364-ab22-626c8615f0ac: # backyard-university
+    enabledByDefault: true
+    hasUrls: true
+    template: classes/_index.twig
+    uriFormat: classes
+type: single

@@ -1,17 +1,19 @@
 columnSuffix: null
-handle: ckEditor
-instructions: 'Complete class description.'
-name: CKEditor
+handle: contentBuilderCk
+instructions: null
+name: 'content builder CK'
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes: ''
+  availableVolumes:
+    - d897fca1-8cdf-48df-9ab9-37e07bf9b10c # images
   ckeConfig: 853056af-c326-4731-a0cd-fe065d13d97f # ckeditor
   createButtonLabel: 'New Content Module'
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
   entryTypes:
     - b2b958cd-3387-41a9-9f93-74fffdb318e6 # CTA
+    - 30cd7c72-a224-47cc-b110-2b75dd147156 # images
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false

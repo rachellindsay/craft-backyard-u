@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3b0e8ab2-2121-4df7-8182-f81606457291 # coaching
+handle: coaching
+maxAuthors: 1
+name: coaching
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  83ff54c4-14e8-4364-ab22-626c8615f0ac: # backyard-university
+    enabledByDefault: true
+    hasUrls: true
+    template: coaching/_entry
+    uriFormat: coaching
+type: single

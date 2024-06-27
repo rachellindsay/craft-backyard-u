@@ -1,0 +1,18 @@
+{% extends '_shared/_layout' %}
+
+{% block main %}
+    <main>
+{# ***** intro ***** #}
+        <div>
+            <h3>{{ entry.title }}</h3>
+            
+            {{ entry.listTagline }}
+        </div>
+
+{# ***** journal entries ***** #}
+        {% include "_shared/_journalGrid" with {
+            limit: 3,
+            section: 'journal'
+        } %}        
+    </main>
+{% endblock %}
