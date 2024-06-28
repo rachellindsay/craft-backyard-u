@@ -1,11 +1,12 @@
 {% extends '_shared/_layout' %}
+{% block pageType "about" %}
 
 {% block main %}
 
     <main>
-        <h3>About Backyard University</h3>
-        {{ entry.title }}
+        <h3>{{ entry.title }}</h3>
+        
     
     </main>
 
-{% endblock %}
+{% endblock main %}

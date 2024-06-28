@@ -3,9 +3,8 @@ red: #cf1d00
 blue: #75daff  
 */
 
-
 :root {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: darkslategray;
   background-color: #75daff;
 
@@ -17,196 +16,201 @@ blue: #75daff
   --accent-color-1: #cf1d00;
   --accent-color-2: lightslategray;
   --accent-color-3: darkslategray;
-  
-/* ***************   layout     *************** */
 
-/* ** header/logo** */
+  /* ***************   layout     *************** */
 
-header {
-  position: relative;
-}
-header .logo {
-  display: block;
-  width: 70%;
-  max-height: 200px;
-  margin: auto;
-  padding: 20px 0 20px 0;
-  object-fit: contain;
-}
+  /* ** header/logo** */
 
-/* **navigation** */
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-nav {
-  text-align: right;
-  padding: 5px;
-  text-transform: uppercase;
-}
-nav a {
-  color: var(--accent-color-2);
-  font-size: 1.3em;
-  font-weight: bold;
-  padding: 0 10px;
-}
-nav a:hover {
-  color: var(--accent-color-3);
-}
-
-/* ***************   homepage   *************** */
-.about-text {
-  width: 80%;
-  margin: 20px auto 20px auto;
-  max-width: 1200px;
-  font-weight: 700;
-  font-size: 1.3em;
-  color: var(--text-color);
-  text-align: center;
-}
-
-/* ***************   classes   *************** */
-
-/* * general info* */
-.workshops {
-  font-size: 1.3em;
-  background-color: var(--accent-color-1);
-  color: aliceblue;
-  width: 85%;
-  padding-left: 10px;
-  margin: auto;
-}
-
-.more-info {
-  font-weight: 700;
-  font-size: 1.1em;
-  color: var(--text-color);
-  width: 80%;
-  margin: auto;
-}
-.more-info a:link {
-  color: var(--text-color)
-}
-
-.more-info a:hover {
-  color: var(--text-accent-color);
-}
-.more-info a:visited {
-  color: var(--text-color)
-}
-
-/* * class details/image/description * */
-.class-info {
-  width: 80%;
-  margin: auto;
-  padding: 0;
-  background-color: var(--accent-color-0);  
-}
-.class-date{
-  background-color: var(--accent-color-2);
-  color: var(--text-accent-color-0);
-  font-size: 1em;
-  margin: 0;
-  padding: 1px 0 1px 5px;
-}
-.class-link:hover {
-  opacity: 0.5;
-}
-.class-title {
-  font-weight: 700;
-  font-size: 1em;
-  text-transform: uppercase;
-  background-color: var(--accent-color-1);
-  color: var(--text-accent-color-0);
-  padding: 2px 5px;
-  margin: 5px 10px 5px 10px;
-  text-align: left;
-}
-.class-location {
-  text-transform: uppercase;
-  color: #000000;
-  font-size: .8em;
-  font-weight: 700;
-  padding: 0 10px;
-}
-.class-img {
-  max-width: 100%;
-  margin: 0 10px;
-  width: auto;
-  height: auto;
-}
-.class-short-description {
-  margin: 0 5px;
-  padding: 0 5px;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* *****   footer    ***** */
-
-footer {
-  margin: 40px auto 5px auto;
-}
-.social {
-  display: block;
-  width: 70%;
-  margin: auto;
-}
-.social img {
-  width: 25px;
-}
-h5 {
-  text-align: center;
-  margin: 5px auto 5px auto;
-}
-.email {
-  font-weight: 700;
-  font-size: 1.1em;
-  color: var(--text-color);
-}
-.email a:link {
-  color: var(--text-color);
-}
-.email a:hover {
-  color: var(--text-accent-color);
-}
-.email a:visited {
-  color: var(--text-color);
-}
-.social span {
-  display: block;
-  text-align: left;
-}
-.social a {
-  padding: 2px 20px 2px 0px;
-}
-
-/* responsive styles */
-
-@media screen and (max-width: 700px) {
+  header {
+    position: relative;
+  }
   header .logo {
-    width: 90%;
-    padding: 25px 0 10px 0;
+    display: block;
+    width: 70%;
+    max-height: 200px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    object-fit: contain;
   }
+
+  /* **navigation** */
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .class .class,
+  .coaching .coaching,
+  .journaling .journaling,
+  .about .about {
+    text-decoration: underline;
+  }
+
+  nav {
+    text-align: right;
+    width: 80%;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  nav a {
+    color: var(--accent-color-2);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  nav a:hover {
+    color: var(--accent-color-3);
+  }
+
+  /* ***************   homepage   *************** */
   .about-text {
-    width: 95%;
-    margin: 0 auto 30px auto;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    max-width: 1200px;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: var(--text-color);
+    text-align: center;
   }
 
-  section .workshops {
-    width: 100%;
-    text-align: center;
+  /* ***************   classes   *************** */
+
+  /* * general info* */
+  .workshops {
+    font-size: 1.3em;
+    background-color: var(--accent-color-1);
+    color: aliceblue;
+    width: 80%;
+    padding: ;
     margin: auto;
   }
 
-  section .more-info {
-    width: 100%;
+  .more-info {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--text-color);
+    width: 80%;
     margin: auto;
-    text-align: center;
   }
-}
-/*  #accordion {
+  .more-info a:link {
+    color: var(--text-color);
+  }
+
+  .more-info a:hover {
+    color: var(--text-accent-color);
+  }
+  .more-info a:visited {
+    color: var(--text-color);
+  }
+
+  /* * class details/image/description * */
+  .class-info {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    background-color: var(--accent-color-0);
+  }
+  .class-date {
+    background-color: var(--accent-color-2);
+    color: var(--text-accent-color-0);
+    font-size: 1em;
+    margin: 0;
+    padding: ;
+  }
+  .class-link:hover {
+    opacity: 0.5;
+  }
+  .class-title {
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: var(--accent-color-1);
+    color: var(--text-accent-color-0);
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .class-location {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0;
+  }
+  .class-img {
+    margin: 0;
+    width: 100%;
+  }
+  .class-short-description {
+    margin: 0;
+    padding: 0 5px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  /* *****   footer    ***** */
+
+  footer {
+    margin: 40px auto 5px auto;
+  }
+  .social {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .social img {
+    width: 25px;
+  }
+  h5 {
+    text-align: center;
+    margin: 5px auto 5px auto;
+  }
+  .email {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--text-color);
+  }
+  .email a:link {
+    color: var(--text-color);
+  }
+  .email a:hover {
+    color: var(--text-accent-color);
+  }
+  .email a:visited {
+    color: var(--text-color);
+  }
+  .social span {
+    display: block;
+    text-align: left;
+  }
+  .social a {
+    padding: 2px 20px 2px 0px;
+  }
+
+  /* responsive styles */
+
+  @media screen and (max-width: 700px) {
+    header .logo {
+      width: 90%;
+      padding: 25px 0 10px 0;
+    }
+    .about-text {
+      width: 95%;
+      margin: 0 auto 30px auto;
+    }
+
+    section .workshops {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+
+    section .more-info {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  /*  #accordion {
     width: 100%;
     max-width: 900px;
     min-width: 275px;
@@ -219,4 +223,5 @@ h5 {
     margin: auto;
     background-color: #75daff;
   }
-*/}
+*/
+}

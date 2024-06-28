@@ -19,18 +19,18 @@
   <body>
     
     <header>
-    <a href="{{ homepage.url}}"><img src="/localDisk/bu_logo.jpg" class="logo" alt="Backyard University Logo"/></a>
+    <a href="{{ homepage.url}}"><img src="/images/bu_logo.jpg" class="logo" alt="Backyard University Logo"/></a>
     </header>
 
    
-    <nav class="nav-bar">
-        <a href="{{ classListing.url }}" class="nav-link">  Classes  </a> 
+    <nav class="nav-bar {% block pageType %}default{% endblock %}">
+        <a href="{{ classListing.url }}" class="nav-link class">  Classes  </a> 
 
-        <a href="{{ coaching.url }}" class="nav-link">  Coaching  </a> 
+        <a href="{{ coaching.url }}" class="nav-link coaching">  Coaching  </a> 
 
-        <a href="{{ journalListing.url }}" class="nav-link">  Journal  </a> 
+        <a href="{{ journalListing.url }}" class="nav-link journaling">  Journal  </a> 
 
-        <a href="{{ about.url }}" class="nav-link">  About   </a> 
+        <a href="{{ about.url }}" class="nav-link about">  About   </a> 
 
           
     </nav>

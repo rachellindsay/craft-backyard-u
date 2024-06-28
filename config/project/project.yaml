@@ -1,4 +1,4 @@
-dateModified: 1719461679
+dateModified: 1719530988
 email:
   fromEmail: racheljlindsay@gmail.com
   fromName: backyard-university
@@ -45,6 +45,7 @@ meta:
     262926b3-1484-4cc8-8956-a610c3bef92b: about # about
     853056af-c326-4731-a0cd-fe065d13d97f: ckeditor # ckeditor
     1674726e-694e-4c98-874d-aea4aca0f1c5: 'rich text content' # rich text content
+    55806454-459a-4f6d-b90b-13a88b15f392: banner # banner
     90308854-296d-4a84-a1a0-8579ecc3ecd1: images # images
     a50c4bce-6e97-4d46-8fb9-c6f75a333e78: Details # Details
     a6877f4d-9055-4da1-a5b1-c4170ac02cd4: instructor # instructor
