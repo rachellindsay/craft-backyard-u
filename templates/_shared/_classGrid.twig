@@ -9,20 +9,21 @@
         <div class="class-info">
         {% for entry in entries %}
         
-          <h3 class="class-date">{{ entry.date}} | {{ entry.time }}</h3> 
+          <div class="class-date">{{ entry.date}} &bull; {{ entry.time }}</div> 
       
-          {% set mainImage = entry.classImage %}         
+          {% set mainImage = entry.classImage.one() %}         
             
             <a href="{{ entry.url }}" class="class-link">  
-              <h3 class="class-location">Location: {{ entry.location }}</h3>          
-              <h3 class="class-title">{{ entry.title }}</h3>
+              <h2 class="class-title">{{ entry.title }}</h2>
               
               {% if mainImage %} 
-                <img
-                  src="{{ entry.classImage.one().url() }}"
+                <div>
+                  <img
+                  src="{{ entry.classImage.one().url('banner') }}"
                   class="class-img"
-                  alt="{{ entry.title }}" 
-                />
+                  alt="{{ entry.title }}"
+                  />
+                </div>
               {% endif %}
 
             </a>

@@ -1,36 +1,114 @@
 /* 
 red: #cf1d00
 blue: #75daff  
+navy: #1b275c
 */
+/* #### css reset from https://www.joshwcomeau.com/css/custom-css-reset/ #### */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
 
+/* ########################################################## */
 :root {
   font-family: "Nunito Sans", sans-serif;
   color: darkslategray;
-  background-color: #75daff;
+  background-color: var(--background-color);
 
   /* * custom props * */
-  --text-color: darkslategray;
-  --text-accent-color-0: aliceblue;
-  --text-accent-color-1: lightslategray;
-  --accent-color-0: aliceblue;
+  --text-color: #384c4c;
+  --text-accent-color-0: #f0f8ff;
+  --text-accent-color-1: #758697;
+  --accent-color-0: #f0f8ff;
   --accent-color-1: #cf1d00;
-  --accent-color-2: lightslategray;
-  --accent-color-3: darkslategray;
+  --accent-color-2: #758697;
+  --accent-color-3: #384c4c;
+  /* --accent-color-4: #1b275c; (navy blue Jess liked */
+  --background-color: #f0f8ff;
+  --logo-blue: #75daff;
 
   /* ***************   layout     *************** */
+
+  body {
+    font-size: 1.3rem;
+    color: var(--text-color);
+  }
+  nav,
+  .body-content,
+  footer {
+    width: 80%;
+    margin: auto;
+  }
 
   /* ** header/logo** */
 
   header {
     position: relative;
+    background-color: var(--logo-blue);
   }
   header .logo {
-    display: block;
-    width: 70%;
-    max-height: 200px;
+    width: 500px;
     margin: auto;
-    padding: 20px 0 20px 0;
-    object-fit: contain;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   /* **navigation** */
@@ -38,6 +116,7 @@ blue: #75daff
     cursor: pointer;
     text-decoration: none;
   }
+
   .class .class,
   .coaching .coaching,
   .journaling .journaling,
@@ -46,182 +125,231 @@ blue: #75daff
   }
 
   nav {
-    text-align: right;
-    width: 80%;
-    padding: 5px;
+    padding-top: 1rem;
     text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: var(--accent-color-1);
   }
   nav a {
-    color: var(--accent-color-2);
-    font-size: 1.3em;
+    color: inherit;
     font-weight: bold;
-    padding: 0 10px;
+    padding-left: 20px;
   }
   nav a:hover {
-    color: var(--accent-color-3);
+    color: var(--text-accent-color-1);
+  }
+  .social-link img {
+    width: 25px;
+  }
+
+  .body-content {
+    padding-top: 3rem;
   }
 
   /* ***************   homepage   *************** */
+
   .about-text {
-    width: 80%;
-    margin: 20px auto 20px auto;
-    max-width: 1200px;
-    font-weight: 700;
-    font-size: 1.3em;
-    color: var(--text-color);
-    text-align: center;
+    font-weight: bold;
   }
 
   /* ***************   classes   *************** */
 
   /* * general info* */
-  .workshops {
-    font-size: 1.3em;
-    background-color: var(--accent-color-1);
-    color: aliceblue;
-    width: 80%;
-    padding: ;
-    margin: auto;
+
+  .classes {
+    padding-top: 3rem;
   }
 
-  .more-info {
-    font-weight: 700;
-    font-size: 1.1em;
+  h1,
+  h2 {
     color: var(--text-color);
-    width: 80%;
-    margin: auto;
-  }
-  .more-info a:link {
-    color: var(--text-color);
+    border-top: 0.25rem solid var(--accent-color-1);
   }
 
-  .more-info a:hover {
-    color: var(--text-accent-color);
+  h1 {
+    color: var(--accent-color-1);
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-  .more-info a:visited {
-    color: var(--text-color);
+
+  h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  p {
+    padding-top: 1rem;
+  }
+
+  a:link {
+    color: inherit;
+  }
+
+  a:hover {
+    color: var(--text-accent-color-1);
+  }
+  a:visited {
+    color: inherit;
+  }
+
+  .more-info,
+  .email {
+    font-size: 1.3rem;
+    font-weight: bold;
   }
 
   /* * class details/image/description * */
-  .class-info {
-    width: 80%;
-    margin: auto;
-    padding: 0;
-    background-color: var(--accent-color-0);
-  }
+
   .class-date {
-    background-color: var(--accent-color-2);
-    color: var(--text-accent-color-0);
-    font-size: 1em;
-    margin: 0;
-    padding: ;
+    padding-top: 3rem;
+    color: var(--accent-color-1);
+    font-weight: bold;
+    text-align: right;
   }
-  .class-link:hover {
-    opacity: 0.5;
+  /* zoom in on hover */
+  .class-link img {
+    object-fit: cover;
+    width: 100%;
+    transition: 0.5s;
   }
-  .class-title {
-    font-weight: 700;
-    font-size: 1em;
-    text-transform: uppercase;
-    background-color: var(--accent-color-1);
-    color: var(--text-accent-color-0);
-    padding: 0;
-    margin: 0;
-    text-align: left;
+  .class-link:hover img {
+    transform: scale(1.1);
   }
-  .class-location {
-    text-transform: uppercase;
-    color: #000000;
-    font-size: 0.8em;
-    font-weight: 700;
-    padding: 0;
+  .class-link div {
+    overflow: hidden;
   }
+
   .class-img {
     margin: 0;
+    max-height: 400px;
+    object-fit: cover;
     width: 100%;
   }
   .class-short-description {
-    margin: 0;
-    padding: 0 5px;
     font-style: italic;
     font-weight: bold;
   }
 
-  /* *****   footer    ***** */
+  /* ***************** classes landing page *************** */
+  .class-location {
+    padding-top: 3rem;
+  }
+  p.maplink {
+    padding: 0.5rem;
+    display: inline;
+  }
+
+  .class-location h3 {
+    text-decoration: underline;
+  }
+
+  .class-location p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .class-location a:hover {
+    color: var(--accent-color-1);
+  }
+
+  .instructor {
+    padding-top: 1rem;
+  }
+
+  /* ********* coaching page **************** */
+
+  /* **************** journal landing page ***************** */
+  .journal-about {
+    font-weight: bold;
+    padding-top: 3rem;
+    font-style: italic;
+  }
+  .journal-entry {
+    padding-top: 3rem;
+  }
+
+  /* **************** journal entries ********************* */
+  .journal-date {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .post-author {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .journal-entry img {
+    margin: auto;
+    padding-top: 1rem;
+    width: 60%;
+  }
+
+  /* **********************   footer    ************************ */
 
   footer {
-    margin: 40px auto 5px auto;
+    border-top: 4px solid var(--accent-color-1);
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
   }
-  .social {
-    display: block;
-    width: 70%;
-    margin: auto;
+
+  /* .footer-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "page-info bu-logo-nb";
+  } */
+
+  .page-info {
+    /* grid-area: page-info; */
+    /* align-self: start; */
+    padding-top: 1rem;
   }
-  .social img {
-    width: 25px;
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    font-size: 30px;
+    color: var(--accent-color-1);
+    padding-right: 0.5rem;
+    vertical-align: text-bottom;
   }
-  h5 {
-    text-align: center;
-    margin: 5px auto 5px auto;
+
+  .copyright {
+    /* grid-area: page-info; */
+    padding-top: 2rem;
   }
-  .email {
-    font-weight: 700;
-    font-size: 1.1em;
-    color: var(--text-color);
-  }
-  .email a:link {
-    color: var(--text-color);
-  }
-  .email a:hover {
-    color: var(--text-accent-color);
-  }
-  .email a:visited {
-    color: var(--text-color);
-  }
-  .social span {
-    display: block;
-    text-align: left;
-  }
-  .social a {
-    padding: 2px 20px 2px 0px;
-  }
+
+  /* .bu-logo-nb {
+    grid-area: bu-logo-nb;
+    justify-self: end;
+    max-width: 180px;
+    padding-top: 0.5rem;
+  } */
 
   /* responsive styles */
 
   @media screen and (max-width: 700px) {
-    header .logo {
+    nav,
+    .body-content,
+    footer {
       width: 90%;
-      padding: 25px 0 10px 0;
-    }
-    .about-text {
-      width: 95%;
-      margin: 0 auto 30px auto;
-    }
-
-    section .workshops {
-      width: 100%;
-      text-align: center;
       margin: auto;
     }
-
-    section .more-info {
-      width: 100%;
-      margin: auto;
-      text-align: center;
-    }
   }
-  /*  #accordion {
-    width: 100%;
-    max-width: 900px;
-    min-width: 275px;
-    margin: auto;
-    list-style: none;
-  }
-  #accordion li {
-    border-bottom: none;
-    width: 100%;
-    margin: auto;
-    background-color: #75daff;
-  }
-*/
 }

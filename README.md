@@ -15,7 +15,7 @@
 - `ddev composer install`
 - `ddev craft up`
 
-## committing changes
+## committing changes on ddev
 
 - `git status`
 - `git add .`
@@ -26,6 +26,15 @@
 - `ddev craft up`
 - `git status` to make sure everything is still committed
 - `git push`
+
+(All changes to the control panel need to be made in ddev and then pulled into Digital Ocean. Settings have been turned off on live control panel)
+
+To update Digital Ocean
+
+- `git status`
+- `git pull`
+- `composer8.2-sp install`
+- `php8.2-sp craft up`
 
 ### Some thoughts on the database:
 

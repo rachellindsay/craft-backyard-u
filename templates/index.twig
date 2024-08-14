@@ -14,25 +14,25 @@
       />
     {% endif %}
     </header> #}
-{# ********************** into blurb ************************ #}
+{# ********************** intro blurb ************************ #}
     <section class="about-text">
-        {{ entry.tagline }}
+        <p>{{ entry.tagline }}</p>
     </section>
 
 {# *********************** classes ***************************** #}
   
     <section class="classes">
 
-      <h2 class="workshops">Upcoming Classes</h2>
+      <h1 class="workshops">Upcoming Classes</h1>
       <div class="more-info">
         <p>
           Questions?
-          <a href="mailto:backyarduniversitypdx@gmail.com"
+          <a href="mailto:backyarduniversitypdx@gmail.com" class="email"
             >Email backyarduniversitypdx@gmail.com</a
           >
         </p>
       </div>
-      <div>
+      <div class="class-grid">
         {% include "_shared/_classGrid" with {
             limit: 10,
             section: 'classes'

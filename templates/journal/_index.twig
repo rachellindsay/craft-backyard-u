@@ -3,11 +3,11 @@
 
 {% block main %}
     <main>
-{# ***** intro ***** #}
+{# ***** journal landing page title/about ***** #}
         <div>
-            <h3>{{ entry.title }}</h3>
+            <h1>{{ entry.title }}</h1>
             
-            {{ entry.listTagline }}
+            <p class="journal-about">{{ entry.listTagline }}</p>
         </div>
 
 {# ***** journal entries ***** #}

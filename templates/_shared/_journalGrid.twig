@@ -3,17 +3,17 @@
     .limit(limit)
     .all()
 %}
-
+{# This is for the individual journal entries #}
 <div class="journal-entry">
     {% for entry in entries %}
         {# {% set entryImage = entry.image.one() %} #}
-            <h2>{{ entry.title }}</h2>
+            <h2 class="journal-entry-title">{{ entry.title }}</h2>
 
-            <h4>{{ entry.date }}</h4>
+            <h4 class="journal-date">{{ entry.date }} &bull; <span class="post-author">{{ entry.postAuthor }}</span></h4>
 
-            <h3>By: {{ entry.postAuthor }}</h3>
+            {# <div class="post-author">{{ entry.postAuthor }}</div> #}
 
-            <p>{{ entry.postContent}}</p>
+            <p class="post-content">{{ entry.postContent}}</p>
 
             {# {% if entryImage %}
                 <img

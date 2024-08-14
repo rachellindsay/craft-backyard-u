@@ -1,4 +1,4 @@
-dateModified: 1719530988
+dateModified: 1723022971
 email:
   fromEmail: racheljlindsay@gmail.com
   fromName: backyard-university
@@ -27,6 +27,7 @@ meta:
     7f560f57-e2c3-4cf4-9f34-08418c21731f: post # post
     8dc3b801-b9cd-48bd-9f66-d26fbfcfa667: journal # journal
     9a1ceb67-8702-4d71-ab27-c1ce54eeedb5: 'single line plaintext' # single line plaintext
+    9dd09454-46a3-42fa-ac04-906963706f74: class-main # class-main
     14bd610e-32c4-4edf-914d-d43bfa32aa82: 'Public Schema' # Public Schema
     30cd7c72-a224-47cc-b110-2b75dd147156: images # images
     32ceb6f1-4fab-4064-b3da-23186711b4e2: Url # Url
@@ -54,6 +55,7 @@ meta:
     b7d0e1ff-113f-4452-9b43-525f2ab2cf56: about # about
     cb8918ee-8e0f-44e0-9067-15f06fca63ff: 'content builder CK' # content builder CK
     ccfb8db7-6402-4ae6-ba81-e0cbadeb2508: 'class listing' # class listing
+    d1d2d71a-57e2-4d68-94e9-8f66aff0d5fe: journal-image # journal-image
     d189f334-1f56-4f9c-8b27-9862c0607bda: 'listing page' # listing page
     d897fca1-8cdf-48df-9ab9-37e07bf9b10c: images # images
     d449752f-c799-474e-b76e-14a9c8189f9e: Simple # Simple

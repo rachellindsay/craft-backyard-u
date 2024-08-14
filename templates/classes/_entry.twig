@@ -6,25 +6,38 @@
   <section class="class-info">
       
     {% set mainImage = entry.classImage.one()%} 
-      <h3 class="class-date">{{ entry.date }} | {{ entry.time }}</h3>                         
-      <h3 class="class-title">{{ entry.title }}</h3>
+      <div class="class-date">{{ entry.date }} &bull; {{ entry.time }}</div>                         
+      <h2 class="class-title">{{ entry.title }}</h2>
       
-      <h3 class="class-location">{{ entry.location }}</h3>
+      
       {% if mainImage %} 
         <img
-          src="{{ entry.classImage.one().url('banner') }}"
+          src="{{ entry.classImage.one().url('classMain') }}"
           class="class-img"
           alt="{{ entry.title }}" 
-          width="{{ mainImage.getWidth('banner') }}"
-          height="{{ mainImage.getHeight('banner') }}"
+          width="{{ mainImage.getWidth('classMain') }}"
+    
         />
       {% endif %}
+      
+     
+        <div class="class-location">
+          <h3>Class Location:   </h3> 
+          <p>{{ entry.location }}</p>
+          {% for address in entry.locationLink %}
+            <p class="maplink"><span class="material-symbols-outlined">map</span><a href="{{ address.url }}">
+              {{ address.textLink }}</a>
+            </p>
+          {% endfor %}
+        </div>
+     
+
       <p class="class-description">
         {{ entry.classDescription }}
       </p>
     {% set instructors = entry.instructor.all() %}
-      <div>
-        <h3 class="instructor">About the instructor:</h3>
+      <div class="instructor">
+        <h3 class="instructor-info">Instructor Info:</h3>
           {% for instructor in instructors %}   
               {{ instructor.bio }}
       </div>

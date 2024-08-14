@@ -3,7 +3,7 @@
         {% for img in entry.image %}
             {% if entryImage %} 
                 <img
-                    src="{{ img.url }}"
+                    src="{{ img.url('journalImage') }}"
                     alt="{{ img.title }}"
                 />
             {% endif %}
