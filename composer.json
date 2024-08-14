@@ -3,7 +3,7 @@
   "prefer-stable": true,
   "require": {
     "craftcms/ckeditor": "4.1.0",
-    "craftcms/cms": "5.2.0",
+    "craftcms/cms": "5.3.4",
     "marionnewlevant/picture": "5.0.0",
     "vlucas/phpdotenv": "^5.4.0"
   },

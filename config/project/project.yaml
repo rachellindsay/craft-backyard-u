@@ -1,4 +1,4 @@
-dateModified: 1723022971
+dateModified: 1723597595
 email:
   fromEmail: racheljlindsay@gmail.com
   fromName: backyard-university
@@ -75,7 +75,7 @@ system:
   edition: solo
   live: true
   name: backyard-university
-  schemaVersion: 5.0.0.20
+  schemaVersion: 5.3.0.2
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
